@@ -1,0 +1,369 @@
+/* start all css */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* start header section css */
+.header {
+    background-color: black;
+    border: 1px solid white;
+}
+.container .header-left {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.container .header-left .logo {
+    width: 95px;
+    margin-top: 8px;
+}
+.container .header-right {
+    width: 70%;
+    float: right;
+}
+.container .header-right ul {
+    margin-bottom: 0;
+}
+.container .header-right ul li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+.container .header-right ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.container .header-right ul li a::after {
+    content: '';
+    width: 0;
+    height: 3%;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+.container .header-right ul li a:hover::after {
+    width: 72%;
+}
+
+
+/* start dropdown css */
+.container .header-right ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    background-color: black;
+    opacity: 0;
+    visibility: visible;
+    border-top: 3px solid white;
+    z-index: 1;
+
+}
+.container .header-right ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+.container .header-right ul li ul li {
+    display: block;
+}
+.container .header-right ul li ul li a {
+    display: inline-block;
+    margin-right: 133px;
+    font-size: 22px;
+}
+.container .header-right ul li ul li:hover {
+    background-color: white;
+    color: black;
+}
+.container .header-right ul li ul li a:hover {
+    color: black;
+}
+.container .header-right ul li ul li a:hover::after {
+    background-color: black;
+}
+/* end dropdown css */
+
+/* end header section css */
+
+/* start benner section css */
+.benner {
+    background: url(./img/pic9.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 200px 0px;
+}
+.container .benner-title {
+    font-weight: 800;
+    margin-left: 120px;
+}
+.container h4 {
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin-top: 16px;
+    margin-left: 120px;
+}
+.container .header-btn1 {
+    background-color: black;
+    color: white;
+    padding: 17px 45px;
+    border-radius: 15px;
+    margin-right: 8px;
+    margin-left: 120px;
+    border: 1px solid black;
+    font-weight: 700;
+}
+.container .header-btn1:hover {
+    background-color: white;
+    color: black;
+}
+.container .header-btn2 {
+    background-color: white;
+    color: black;
+    padding: 17px 45px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+.container .header-btn2:hover {
+    background-color: black;
+    color: white;
+}
+/* end benner section css */
+
+/* start about section css */
+.about {
+    background-color: #87A471;
+    padding-bottom: 70px;
+}
+.about-title {
+    font-weight: 700;
+    font-size: 48px;
+    width: 249px;
+    margin: auto;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 6px white;
+    margin-bottom: 65px;
+}
+.about-left {
+    width: 60%;
+    float: left;
+}
+.about-left .about-info1 {
+    width: 450px;
+    margin-left: 155px;
+    margin-top: 40px;
+}
+.about-left .about-info2 {
+    width: 450px;
+    margin: right;
+    margin-left: 155px;
+    margin-top: -22px;
+}
+.about-right {
+    width: 35%;
+    float: right;
+}
+.about-right .about-img {
+    width: 255px;
+}
+/* end about section css */
+
+/* start work section css */
+.work {
+    background-color: #606A64;
+    padding-top: 1px;
+    padding-bottom: 60px;
+}
+.container .work-title {
+    font-weight: 700;
+    font-size: 48px;
+    width: 249px;
+    margin: auto;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.container .work-subtitle {
+    text-align: center;
+    word-spacing: 4px;
+    margin-bottom: 30px;
+}
+.container .work-content {
+    text-align: center;
+    font-size: 19px;
+    width: 720px;
+    margin: auto;
+    opacity: 0.7;
+    margin-bottom: 85px;
+}
+.box {
+    width: 27%;
+    background-color: white;
+    float: left;
+    border-radius: 15px;
+    margin: 0px 35px;
+}
+.box .box-left {
+    width: 30%;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+}
+.box .box-left .logo {
+    width: 40px;
+}
+.box .box-right {
+    width: 70%;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.box .box-right .box-content {
+    font-size: 13px;
+    opacity: 0.6;
+    font-weight: 600;
+    width: 180px;
+}
+/* end work section css */
+
+/* start service section css */
+.service {
+    background-color: #87A471;
+    padding-bottom: 100px;
+}
+.service-title {
+    padding-top: 85px;
+}
+.service-content {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 65px;
+}
+.service-left {
+    width: 48%;
+    float: left;
+    text-align: right;
+    border: 1px solid white;
+    margin-bottom: 50px;
+}
+.box-img {
+    width: 530px;
+}
+.img-content {
+    text-align: center;
+    margin: 20px 0px;
+}
+.img-content span {
+    color: white;
+}
+.service-right {
+    width: 48%;
+    float: right;
+    border: 1px solid white;
+    margin-bottom: 50px;
+}
+.service-imgbox {
+    float: left;
+    margin: 0px 20px;
+}
+.service-imgbox .service-img {
+    width: 237px;
+}
+
+/* end service section css */
+
+/* start team section css */
+.team {
+    background-color: #5B9776;
+    padding-bottom: 35px;
+}
+.team .team-content {}
+.drow {
+    background-color: white;
+    width: 305px;
+    height: 3px;
+    margin: auto;
+}
+.team-imgbox {
+    width: 32%;
+    float: left;
+    margin: 0px 0px;
+    text-align: center;
+}
+.team-imgbox .team-img {
+    width: 305px;
+}
+.team-logobox {
+    text-align: center;
+    margin-top: 10px;
+}
+.team-logobox .team-logo {
+    color: white;
+    font-size: 28px;
+    margin: 0px 8px;
+}
+.team-logobox .team-logo:hover {
+    color: #697965;
+}
+/* end team section css */
+
+/* start footer-top section css */
+.footer-top {
+    background-color: #606A64;
+    padding-bottom: 110px;
+}
+.footer-toptitle {
+    padding-top: 85px;
+    font-size: 35px;
+
+}
+.footer-topcontent {
+    width: 571px;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-top: 15px;
+}
+.footer-button {
+    color: white;
+    background-color: #00BC9C;
+    margin: auto;
+    display: block;
+    width: 170px;
+    font-size: 11px;
+    margin-top: 25px;
+    height: 37px;
+    line-height: 22px;
+}
+.footer-button:hover {
+    background-color: #4C6880;
+    color: white;
+}
+/* end footer-top section css */
+
+/* start footer-bottom css */
+.footer-bottom {
+    background-color: black;
+    padding: 25px;
+}
+.footer-bottomcontent {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.7;
+}
+/* end footer-bottom css */
